@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>咏雪诗句-经典咏雪古诗词大全与赏析</title>
+    <meta name="description" content="咏雪诗句大全，精选李白、杜甫、白居易、柳宗元等历代诗人咏雪名句，包含全文、注释、译文与赏析。感受古典诗词中的冰雪之美，走进银装素裹的诗意世界。">
+    <meta name="keywords" content="咏雪诗句,咏雪诗词,写雪的古诗,咏雪名句,雪的诗句大全,白雪歌送武判官归京,江雪,别董大">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Songti SC", "SimSun", "STSong", serif;
+            background-color: #f4f8f7;
+            color: #2d3e3a;
+            line-height: 1.75;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #2c4a4a 0%, #3a6b6b 100%);
+            padding: 22px 0;
+            border-bottom: 4px solid #b8d8d0;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo h1 {
+            font-size: 1.9rem;
+            color: #f0f9f5;
+            font-weight: normal;
+            letter-spacing: 6px;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+        }
+        .logo span {
+            font-size: 0.9rem;
+            color: #bcd9cf;
+            display: block;
+            letter-spacing: 2px;
+            margin-top: 4px;
+        }
+        nav {
+            background: #ffffff;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        nav li {
+            margin: 0;
+        }
+        nav a {
+            display: block;
+            padding: 14px 22px;
+            text-decoration: none;
+            color: #2d4a45;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+        nav a:hover {
+            color: #1a6b5a;
+            background: #f0faf6;
+            border-bottom-color: #3a8f7a;
+        }
+        .hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), 
+                        repeating-linear-gradient(45deg, #dbe9e5 0px, #dbe9e5 2px, #f7fbfa 2px, #f7fbfa 8px);
+            padding: 65px 0;
+            text-align: center;
+            border-bottom: 1px solid #d9e6e2;
+        }
+        .hero h2 {
+            font-size: 2.4rem;
+            color: #1f4a3d;
+            margin-bottom: 18px;
+            font-weight: 500;
+        }
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 25px auto;
+            font-size: 1.1rem;
+            color: #3e5c56;
+        }
+        .hero-quote {
+            background: rgba(255,255,255,0.8);
+            border-left: 5px solid #4a8f7a;
+            padding: 18px 28px;
+            display: inline-block;
+            font-size: 1.3rem;
+            color: #1d3e35;
+            font-style: italic;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+        }
+        .featured-section {
+            padding: 55px 0;
+        }
+        .section-title {
+            font-size: 1.9rem;
+            color: #1d4a3c;
+            text-align: center;
+            margin-bottom: 12px;
+            position: relative;
+        }
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #5a9b86;
+            margin: 12px auto 0;
+            border-radius: 2px;
+        }
+        .section-sub {
+            text-align: center;
+            color: #5d7670;
+            margin-bottom: 35px;
+            font-size: 0.95rem;
+        }
+        .poem-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        .poem-card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 28px 24px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+            border-top: 4px solid #6ca896;
+            transition: transform 0.2s;
+        }
+        .poem-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+        }
+        .poem-card h3 {
+            font-size: 1.3rem;
+            color: #1d4a3c;
+            margin-bottom: 6px;
+            border-bottom: 1px dashed #cfe0da;
+            padding-bottom: 8px;
+        }
+        .poem-author {
+            color: #6b8b82;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .poem-text {
+            font-size: 1rem;
+            color: #3a4e4a;
+            margin-bottom: 14px;
+            line-height: 1.9;
+        }
+        .poem-note {
+            background: #f3faf7;
+            padding: 12px 15px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #3a6a5f;
+            border-left: 3px solid #4a8f7a;
+        }
+        .famous-lines {
+            background: #e9f2ef;
+            padding: 55px 0;
+        }
+        .lines-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .line-item {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px 24px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            border-left: 4px solid #4a8f7a;
+        }
+        .line-item .quote-icon {
+            font-size: 2rem;
+            color: #a9cdc2;
+            line-height: 1;
+        }
+        .line-item p {
+            font-size: 1.1rem;
+            color: #2b4a42;
+            margin-bottom: 4px;
+        }
+        .line-item .source {
+            font-size: 0.85rem;
+            color: #6a8a80;
+        }
+        .content-article {
+            padding: 55px 0;
+        }
+        .article-body {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px 48px;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.04);
+        }
+        .article-body h3 {
+            font-size: 1.5rem;
+            color: #1d4a3c;
+            margin: 28px 0 12px 0;
+        }
+        .article-body h3:first-child {
+            margin-top: 0;
+        }
+        .article-body p {
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+        .article-body ul {
+            margin: 10px 0 20px 24px;
+        }
+        .article-body li {
+            margin-bottom: 8px;
+        }
+        .article-body strong {
+            color: #1f5a4a;
+        }
+        .faq-section {
+            background: #f8fbfa;
+            padding: 55px 0;
+        }
+        .faq-list {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            padding: 20px 28px;
+            border: 1px solid #e3ece9;
+        }
+        .faq-item h3 {
+            font-size: 1.1rem;
+            color: #1d4a3c;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .faq-item p {
+            color: #4d6b64;
+            font-size: 0.98rem;
+        }
+        footer {
+            background: #24433c;
+            color: #b8d2ca;
+            padding: 35px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 5px solid #3a6b60;
+        }
+        footer a {
+            color: #d4e8e2;
+            text-decoration: none;
+        }
+        .back-top {
+            display: inline-block;
+            margin-top: 10px;
+        }
+        @media (max-width: 992px) {
+            .poem-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo h1 {
+                font-size: 1.6rem;
+                letter-spacing: 3px;
+            }
+            nav ul {
+                justify-content: center;
+            }
+            nav a {
+                padding: 12px 14px;
+                font-size: 0.9rem;
+            }
+            .hero {
+                padding: 45px 0;
+            }
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            .hero-quote {
+                font-size: 1.1rem;
+                padding: 14px 18px;
+            }
+            .poem-grid,
+            .lines-list {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+            .article-body {
+                padding: 25px 20px;
+            }
+            .section-title {
+                font-size: 1.6rem;
+            }
+            .faq-item {
+                padding: 16px 18px;
+            }
+        }
+        @media (max-width: 480px) {
+            nav a {
+                padding: 10px 8px;
+                font-size: 0.82rem;
+            }
+            .container {
+                padding: 0 12px;
+            }
+            .hero-quote {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                <h1>咏雪诗句</h1>
+                <span>千年冰雪 · 诗意人间</span>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#classics">经典咏雪</a></li>
+                <li><a href="#lines">千古名句</a></li>
+                <li><a href="#culture">雪与诗文化</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <h2>咏雪诗句 · 银装素裹的千年回响</h2>
+                <p>从《诗经》中的"雨雪霏霏"到唐诗宋词里的漫天琼瑶，咏雪诗句承载着古人对于自然、时序与人情的细腻体察。这里精选历代咏雪佳作，带你走进冰清玉洁的诗意世界。</p>
+                <div class="hero-quote">"忽如一夜春风来，千树万树梨花开"</div>
+            </div>
+        </section>
+
+        <section class="featured-section" id="classics">
+            <div class="container">
+                <h2 class="section-title">经典咏雪佳作</h2>
+                <p class="section-sub">每一首都是一幅雪景图，每一句都凝结着诗人的心境与哲思</p>
+                <div class="poem-grid">
+                    <article class="poem-card">
+                        <h3>《江雪》</h3>
+                        <span class="poem-author">【唐】柳宗元</span>
+                        <p class="poem-text">
+                            千山鸟飞绝，万径人踪灭。<br>
+                            孤舟蓑笠翁，独钓寒江雪。
+                        </p>
+                        <div class="poem-note">
+                            <strong>赏析：</strong>天地之间一片纯白寂静，一叶孤舟、一位渔翁，构成了中国文学史上最孤独也最坚韧的雪中画面。
+                        </div>
+                    </article>
+                    <article class="poem-card">
+                        <h3>《白雪歌送武判官归京》</h3>
+                        <span class="poem-author">【唐】岑参</span>
+                        <p class="poem-text">
+                            北风卷地白草折，胡天八月即飞雪。<br>
+                            忽如一夜春风来，千树万树梨花开。
+                        </p>
+                        <div class="poem-note">
+                            <strong>赏析：</strong>以春花喻冬雪，想象奇特瑰丽，将边塞的严寒化为春意盎然的壮美奇观，成为咏雪诗中的千古绝唱。
+                        </div>
+                    </article>
+                    <article class="poem-card">
+                        <h3>《别董大》</h3>
+                        <span class="poem-author">【唐】高适</span>
+                        <p class="poem-text">
+                            千里黄云白日曛，北风吹雁雪纷纷。<br>
+                            莫愁前路无知己，天下谁人不识君。
+                        </p>
+                        <div class="poem-note">
+                            <strong>赏析：</strong>大雪纷飞中送别友人，却以豪迈壮语宽慰对方，风雪虽寒，情谊却暖。
+                        </div>
+                    </article>
+                    <article class="poem-card">
+                        <h3>《问刘十九》</h3>
+                        <span class="poem-author">【唐】白居易</span>
+                        <p class="poem-text">
+                            绿蚁新醅酒，红泥小火炉。<br>
+                            晚来天欲雪，能饮一杯无？
+                        </p>
+                        <div class="poem-note">
+                            <strong>赏析：</strong>暮雪将至，红炉新酒，一句深情相邀，将冬日雪夜的温暖与友情写得淋漓尽致。
+                        </div>
+                    </article>
+                    <article class="poem-card">
+                        <h3>《春雪》</h3>
+                        <span class="poem-author">【唐】韩愈</span>
+                        <p class="poem-text">
+                            新年都未有芳华，二月初惊见草芽。<br>
+                            白雪却嫌春色晚，故穿庭树作飞花。
+                        </p>
+                        <div class="poem-note">
+                            <strong>赏析：</strong>诗人赋予白雪灵性，它仿佛嫌春色来迟，化作飞花装点枝头，俏皮而富有生机。
+                        </div>
+                    </article>
+                    <article class="poem-card">
+                        <h3>《夜雪》</h3>
+                        <span class="poem-author">【唐】白居易</span>
+                        <p class="poem-text">
+                            已讶衾枕冷，复见窗户明。<br>
+                            夜深知雪重，时闻折竹声。
+                        </p>
+                        <div class="poem-note">
+                            <strong>赏析：</strong>从触觉、视觉、听觉多角度写夜雪之重，含蓄蕴藉，不着一个"雪"字却尽显雪意。
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="famous-lines" id="lines">
+            <div class="container">
+                <h2 class="section-title">咏雪千古名句</h2>
+                <p class="section-sub">一句诗，便是一幅画，一种心境</p>
+                <div class="lines-list">
+                    <div class="line-item">
+                        <span class="quote-icon">❝</span>
+                        <div>
+                            <p>窗含西岭千秋雪，门泊东吴万里船</p>
+                            <span class="source">——杜甫《绝句》</span>
+                        </div>
+                    </div>
+                    <div class="line-item">
+                        <span class="quote-icon">❝</span>
+                        <div>
+                            <p>欲渡黄河冰塞川，将登太行雪满山</p>
+                            <span class="source">——李白《行路难》</span>
+                        </div>
+                    </div>
+                    <div class="line-item">
+                        <span class="quote-icon">❝</span>
+                        <div>
+                            <p>梅须逊雪三分白，雪却输梅一段香</p>
+                            <span class="source">——卢梅坡《雪梅》</span>
+                        </div>
+                    </div>
+                    <div class="line-item">
+                        <span class="quote-icon">❝</span>
+                        <div>
+                            <p>柴门闻犬吠，风雪夜归人</p>
+                            <span class="source">——刘长卿《逢雪宿芙蓉山主人》</span>
+                        </div>
+                    </div>
+                    <div class="line-item">
+                        <span class="quote-icon">❝</span>
+                        <div>
+                            <p>燕山雪花大如席，片片吹落轩辕台</p>
+                            <span class="source">——李白《北风行》</span>
+                        </div>
+                    </div>
+                    <div class="line-item">
+                        <span class="quote-icon">❝</span>
+                        <div>
+                            <p>乱云低薄暮，急雪舞回风</p>
+                            <span class="source">——杜甫《对雪》</span>
+                        </div>
+                    </div>
+                    <div class="line-item">
+                        <span class="quote-icon">❝</span>
+                        <div>
+                            <p>终南阴岭秀，积雪浮云端</p>
+                            <span class="source">——祖咏《终南望余雪》</span>
+                        </div>
+                    </div>
+                    <div class="line-item">
+                        <span class="quote-icon">❝</span>
+                        <div>
+                            <p>风一更，雪一更，聒碎乡心梦不成</p>
+                            <span class="source">——纳兰性德《长相思》</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-article" id="culture">
+            <div class="container">
+                <div class="article-body">
+                    <h3>咏雪诗句的文化意蕴</h3>
+                    <p>在中国古典诗词中，雪不仅是一种自然现象，更是一个承载着丰富情感与哲思的意象。咏雪诗句之所以能够跨越千年依然打动人心，在于雪这一意象本身就蕴含着多重文化密码。</p>
+                    
+                    <h3>雪与高洁品格</h3>
+                    <p>古人常以雪喻君子之德。雪色洁白、质地纯净，天然与"清白""高洁"等品质相连。柳宗元笔下独钓寒江雪的渔翁，正是诗人孤傲人格的化身；而卢梅坡"梅须逊雪三分白，雪却输梅一段香"的咏叹，则道出了雪与梅各自的美好，暗含品格的互补与映照。</p>
+                    
+                    <h3>雪与羁旅乡愁</h3>
+                    <p>风雪往往阻断归途，因此雪也常常成为思乡怀人的触媒。纳兰性德"风一更，雪一更，聒碎乡心梦不成"将风雪之声与乡愁交织，读来令人动容。刘长卿"柴门闻犬吠，风雪夜归人"则在苍茫雪夜中勾勒出一幅温暖的归家图景。</p>
+                    
+                    <h3>雪与壮阔胸怀</h3>
+                    <p>边塞诗中的雪，往往气势磅礴。岑参"忽如一夜春风来，千树万树梨花开"将严寒化为春意，展现出盛唐人特有的豪迈与乐观；李白"燕山雪花大如席"则以极度夸张的手法，赋予雪以撼人的力量，体现了诗人奔放的想象力。</p>
+                    
+                    <h3>如何品味咏雪诗句</h3>
+                    <ul>
+                        <li><strong>关注听觉与触觉：</strong>雪的质感、雪落的声音，如"夜深知雪重，时闻折竹声"，从侧面写出雪之厚重。</li>
+                        <li><strong>体会比喻之妙：</strong>咏雪诗中最精彩处往往在于比喻，"撒盐空中差可拟，未若柳絮因风起"便是千古著名的比喻典故。</li>
+                        <li><strong>结合诗人身世：</strong>同是咏雪，边塞诗人写出豪迈，贬谪文人写出孤愤，田园诗人则写出闲适。结合背景更能体会诗中深意。</li>
+                    </ul>
+                    
+                    <h3>咏雪诗句在现代生活中的运用</h3>
+                    <p>时至今日，咏雪诗句依然活跃在我们的语言与生活中。冬日初雪时，人们会自然想起"晚来天欲雪，能饮一杯无"的温暖邀约；送别友人时，"莫愁前路无知己"是最好的宽慰；而在社交媒体上，一句"忽如一夜春风来"配上雪景照片，也成为当代人对诗意生活的追寻。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <h2 class="section-title">关于咏雪诗句的常见问题</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>最著名的咏雪诗句是哪一句？</h3>
+                        <p>如果只能选一句，岑参《白雪歌送武判官归京》中的"忽如一夜春风来，千树万树梨花开"是公认最具想象力的咏雪名句，它将严冬的雪景化为春天的梨花，千百年来传诵不衰。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>为什么古人喜欢用雪来比喻洁白？</h3>
+                        <p>雪具有纯净、洁白、覆盖万物而不争的特点，与古代文人崇尚的"清白""高洁"品格相通。同时雪是冬季最醒目的自然景观，容易引发诗人对时间、生命与品格的联想。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>咏雪诗和写雪诗有区别吗？</h3>
+                        <p>严格来说，"咏雪诗"是以雪为专门吟咏对象的诗作，重在刻画雪的形态、气质与意境；而"写雪诗"范围更广，只要诗中涉及雪景都可以算。很多作品既是咏雪，也是借雪抒情。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>如何快速记住咏雪名句？</h3>
+                        <p>建议结合画面联想记忆。比如记住"孤舟蓑笠翁，独钓寒江雪"，可以想象一幅寒江独钓的水墨画；记住"柴门闻犬吠，风雪夜归人"，就想象一个雪夜归家的温暖场景。画面感越强，记忆越深刻。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>有哪些适合小朋友学的咏雪诗？</h3>
+                        <p>李白的《静夜思》虽不咏雪，但若论简单易懂的咏雪诗，可以推荐祖咏的《终南望余雪》"终南阴岭秀，积雪浮云端"，诗句短小，画面清晰。韩愈的《春雪》也生动有趣，适合儿童理解。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>咏雪诗句 · 在古典诗词中感受中国雪文化的深远魅力</p>
+            <p>本站内容仅供学习交流 · 部分赏析为编者解读</p>
+            <a href="#home" class="back-top">回到顶部 ↑</a>
+        </div>
+    </footer>
+</body>
+</html>
