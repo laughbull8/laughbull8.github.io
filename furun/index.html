@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>富润家园租房-富润家园小区房源信息与租房指南</title>
+    <meta name="description" content="富润家园租房信息汇总，提供富润家园小区户型介绍、租金参考、周边配套、租房流程与注意事项，帮助您快速了解并选择合适的房源。">
+    <meta name="keywords" content="富润家园租房,富润家园,富润家园小区,富润家园租金,富润家园户型,北京富润家园">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: #f5f7fa;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .site-header {
+            background: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .brand-icon {
+            width: 40px;
+            height: 40px;
+            background: #2c6e9b;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .brand-name {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1a2b3c;
+            letter-spacing: 1px;
+        }
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .main-nav a {
+            text-decoration: none;
+            color: #34495e;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: background 0.2s, color 0.2s;
+        }
+        .main-nav a:hover, .main-nav a.active {
+            background: #2c6e9b;
+            color: #fff;
+        }
+        .header-contact {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        /* Hero */
+        .hero-section {
+            background: linear-gradient(135deg, #e8f0f8 0%, #d4e4f0 100%);
+            padding: 60px 20px 50px;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 38px;
+            font-weight: 800;
+            color: #1a2b3c;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+        .hero-subtitle {
+            font-size: 18px;
+            color: #3a5a78;
+            max-width: 750px;
+            margin: 0 auto 30px;
+            font-weight: 400;
+        }
+        .hero-search {
+            max-width: 650px;
+            margin: 0 auto;
+            display: flex;
+            background: #fff;
+            border-radius: 50px;
+            padding: 6px 6px 6px 24px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            align-items: center;
+        }
+        .hero-search input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            background: transparent;
+            padding: 12px 0;
+        }
+        .hero-search button {
+            background: #2c6e9b;
+            border: none;
+            color: #fff;
+            padding: 12px 32px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .hero-search button:hover {
+            background: #1f567d;
+        }
+        .hero-tags {
+            margin-top: 24px;
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 14px;
+            color: #3a5a78;
+        }
+        .hero-tags span {
+            background: rgba(255,255,255,0.7);
+            padding: 4px 14px;
+            border-radius: 20px;
+        }
+
+        /* Section styles */
+        .section {
+            padding: 50px 0;
+        }
+        .section-alt {
+            background: #ffffff;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-header h2 {
+            font-size: 30px;
+            font-weight: 700;
+            color: #1a2b3c;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 12px;
+        }
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: #2c6e9b;
+            border-radius: 4px;
+        }
+        .section-header p {
+            color: #5a7a94;
+            margin-top: 12px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Info cards */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 20px;
+        }
+        .info-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px 24px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+            border-top: 4px solid #2c6e9b;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .info-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+        .info-card .card-icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+        .info-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #1a2b3c;
+        }
+        .info-card p {
+            color: #4a6279;
+            font-size: 15px;
+        }
+        .info-card .more-link {
+            display: inline-block;
+            margin-top: 16px;
+            color: #2c6e9b;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* House list */
+        .house-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 20px;
+        }
+        .house-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: box-shadow 0.2s;
+        }
+        .house-card:hover {
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .house-thumb {
+            height: 180px;
+            background: linear-gradient(145deg, #a0c4d9, #7fa8c5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.8);
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .house-info {
+            padding: 20px;
+        }
+        .house-info h3 {
+            font-size: 18px;
+            color: #1a2b3c;
+            margin-bottom: 8px;
+        }
+        .house-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #6b7f8f;
+            margin-bottom: 10px;
+        }
+        .house-price {
+            color: #d35400;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .house-price small {
+            font-size: 14px;
+            font-weight: 400;
+            color: #7f8c8d;
+        }
+        .house-desc {
+            font-size: 14px;
+            color: #4a6279;
+            border-top: 1px solid #ecf0f1;
+            padding-top: 12px;
+            margin-top: 8px;
+        }
+
+        /* Guide section */
+        .guide-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+            margin-top: 30px;
+        }
+        .step-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: #f0f5fa;
+            border-radius: 16px;
+        }
+        .step-num {
+            width: 48px;
+            height: 48px;
+            background: #2c6e9b;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 700;
+            margin: 0 auto 16px;
+        }
+        .step-item h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .step-item p {
+            font-size: 14px;
+            color: #4a6279;
+        }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .faq-item h3 {
+            font-size: 18px;
+            color: #1a2b3c;
+            margin-bottom: 8px;
+            padding-left: 30px;
+            position: relative;
+        }
+        .faq-item h3::before {
+            content: 'Q';
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #2c6e9b;
+            color: #fff;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+        .faq-item p {
+            color: #4a6279;
+            padding-left: 30px;
+            margin-top: 8px;
+            font-size: 15px;
+        }
+
+        /* CTA */
+        .cta-banner {
+            background: #1a2b3c;
+            border-radius: 20px;
+            text-align: center;
+            padding: 50px 30px;
+            margin: 40px 0;
+            color: #fff;
+        }
+        .cta-banner h2 {
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+        .cta-banner p {
+            color: #b0c4d9;
+            margin-bottom: 24px;
+            font-size: 16px;
+        }
+        .cta-button {
+            background: #fff;
+            color: #1a2b3c;
+            border: none;
+            padding: 14px 40px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .cta-button:hover {
+            transform: scale(1.03);
+        }
+
+        /* Footer */
+        .site-footer {
+            background: #1a2b3c;
+            color: #a0b4c8;
+            padding: 40px 0 20px;
+            margin-top: 20px;
+        }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .footer-col a {
+            color: #a0b4c8;
+            text-decoration: none;
+        }
+        .footer-col a:hover {
+            color: #fff;
+        }
+        .footer-bottom {
+            border-top: 1px solid #2a4055;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 28px;
+            }
+            .header-wrapper {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .main-nav ul {
+                justify-content: center;
+            }
+            .hero-search {
+                flex-direction: column;
+                border-radius: 24px;
+                padding: 12px;
+                gap: 10px;
+            }
+            .hero-search input {
+                width: 100%;
+                text-align: center;
+                border: 1px solid #e0e6ed;
+                border-radius: 30px;
+                padding: 10px 16px;
+            }
+            .hero-search button {
+                width: 100%;
+            }
+            .section-header h2 {
+                font-size: 24px;
+            }
+            .info-grid, .house-grid, .guide-steps {
+                grid-template-columns: 1fr;
+            }
+            .cta-banner {
+                padding: 30px 20px;
+            }
+            .cta-banner h2 {
+                font-size: 22px;
+            }
+        }
+        @media (max-width: 480px) {
+            .brand-name {
+                font-size: 18px;
+            }
+            .hero-title {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <header class="site-header">
+        <div class="container header-wrapper">
+            <div class="brand">
+                <div class="brand-icon">富</div>
+                <span class="brand-name">富润家园租住指南</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">小区概况</a></li>
+                    <li><a href="#">在租房源</a></li>
+                    <li><a href="#">租金行情</a></li>
+                    <li><a href="#">租房流程</a></li>
+                    <li><a href="#">常见问题</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                咨询电话：400-800-1234
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero 首屏 -->
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="hero-title">富润家园租房</h1>
+                <p class="hero-subtitle">全面了解富润家园小区环境、户型分布、租金水平与周边生活配套，帮助您高效筛选合适的房源，安心入住。</p>
+                <div class="hero-search">
+                    <input type="text" placeholder="输入户型、面积或楼层关键词，如“两居室”">
+                    <button type="button">查找房源</button>
+                </div>
+                <div class="hero-tags">
+                    <span>🏠 整租</span>
+                    <span>👥 合租</span>
+                    <span>💰 押一付三</span>
+                    <span>🚇 交通便利</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 小区简介与核心优势 -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>富润家园小区核心优势</h2>
+                    <p>富润家园位于城市成熟生活区，小区环境整洁，物业管理规范，周边配套齐全，是众多租客关注的热门小区之一。</p>
+                </div>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="card-icon">📍</div>
+                        <h3>优越地理位置</h3>
+                        <p>小区周边有多条公交线路经过，距离地铁站约1.2公里，通勤出行较为便利。附近有大型超市、医院、公园等公共设施。</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon">🏢</div>
+                        <h3>多种户型选择</h3>
+                        <p>富润家园提供一居室、两居室、三居室等多种户型，面积从50平米到120平米不等，满足单身、家庭等不同租住需求。</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon">🛡️</div>
+                        <h3>社区环境与安全</h3>
+                        <p>小区实行封闭式管理，有门禁系统和安保巡逻，绿化率较高，居住氛围安静舒适，适合长期居住。</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon">🛒</div>
+                        <h3>生活配套成熟</h3>
+                        <p>步行10分钟范围内有菜市场、便利店、餐饮店、药店等，日常生活需求基本可以满足，生活便利度较高。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 热门户型与租金参考 -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>热门户型与租金参考</h2>
+                    <p>以下为富润家园近期常见户型的市场租金范围，实际租金因楼层、装修、家具配置等因素有所浮动。</p>
+                </div>
+                <div class="house-grid">
+                    <div class="house-card">
+                        <div class="house-thumb">一居室 · 50-60㎡</div>
+                        <div class="house-info">
+                            <h3>舒适一居室</h3>
+                            <div class="house-meta">
+                                <span>整租 · 中高层</span>
+                                <span>精装修</span>
+                            </div>
+                            <div class="house-price">¥4500 <small>/月</small></div>
+                            <p class="house-desc">适合单人或情侣居住，朝南采光好，家具家电齐全，拎包入住。</p>
+                        </div>
+                    </div>
+                    <div class="house-card">
+                        <div class="house-thumb">两居室 · 80-90㎡</div>
+                        <div class="house-info">
+                            <h3>经典两居室</h3>
+                            <div class="house-meta">
+                                <span>整租 · 中间楼层</span>
+                                <span>南北通透</span>
+                            </div>
+                            <div class="house-price">¥6200 <small>/月</small></div>
+                            <p class="house-desc">家庭租住首选，格局方正，客厅宽敞，小区中心位置较为安静。</p>
+                        </div>
+                    </div>
+                    <div class="house-card">
+                        <div class="house-thumb">三居室 · 110-120㎡</div>
+                        <div class="house-info">
+                            <h3>宽敞三居室</h3>
+                            <div class="house-meta">
+                                <span>整租 · 低楼层</span>
+                                <span>双卫设计</span>
+                            </div>
+                            <div class="house-price">¥7800 <small>/月</small></div>
+                            <p class="house-desc">适合三代同堂或合租群体，空间充足，储物空间丰富。</p>
+                        </div>
+                    </div>
+                </div>
+                <p style="text-align:center; margin-top: 24px; color: #7f8c8d; font-size: 14px;">* 以上租金为近期市场参考价，具体以实际房源情况为准。</p>
+            </div>
+        </section>
+
+        <!-- 租房流程指南 -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>富润家园租房流程指南</h2>
+                    <p>从看房到签约，理清每一步关键环节，避免踩坑，让租房过程更加顺利。</p>
+                </div>
+                <div class="guide-steps">
+                    <div class="step-item">
+                        <div class="step-num">1</div>
+                        <h3>明确需求</h3>
+                        <p>确定预算、户型、入住时间等核心需求，筛选符合条件的目标房源。</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">2</div>
+                        <h3>实地看房</h3>
+                        <p>检查房屋采光、隔音、水电设施及门窗情况，同时观察小区环境和通勤路线。</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">3</div>
+                        <h3>核实信息</h3>
+                        <p>查看房东的房产证和身份证件，确认出租人身份，避免二房东纠纷。</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">4</div>
+                        <h3>签约入住</h3>
+                        <p>仔细阅读合同条款，明确押金退还条件、维修责任划分，交接钥匙和门禁卡。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 周边配套详情 -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>周边生活配套一揽</h2>
+                    <p>富润家园周边的交通、教育、医疗和商业配套情况，帮助您评估日常生活的便利程度。</p>
+                </div>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="card-icon">🚌</div>
+                        <h3>交通出行</h3>
+                        <p>小区门口有公交站，线路覆盖核心商圈。地铁站步行约15分钟，早晚高峰有共享单车补充接驳。</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon">🏫</div>
+                        <h3>教育资源</h3>
+                        <p>周边有公立幼儿园、小学和中学，适合带孩子的租户家庭，部分学校距离小区仅数百米。</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon">🏥</div>
+                        <h3>医疗服务</h3>
+                        <p>附近有社区卫生服务中心和二甲医院，夜间急诊也可在20分钟内到达，日常就医方便。</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon">🌳</div>
+                        <h3>休闲购物</h3>
+                        <p>小区附近有综合购物广场和公园，周末休闲娱乐选择丰富，菜市场步行即可到达。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 FAQ -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>富润家园租房常见问题</h2>
+                    <p>汇总租客最关心的问题，提供客观、实用的解答。</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>富润家园的停车位是否充足？</h3>
+                        <p>小区设有地下停车场和部分地上车位，目前车位相对紧张，租户如有停车需求建议在签约前与房东或物业确认车位租赁情况。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>小区允许养宠物吗？</h3>
+                        <p>根据物业管理规定，小区允许养宠物，但需要遵守相关养犬规定并办理相应证件。具体需与房东协商并在合同中注明。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>富润家园的水电暖气费用如何收取？</h3>
+                        <p>小区水电费按市政标准收取，暖气为集中供暖，费用按建筑面积计算。租房前建议与房东确认费用缴纳方式及历史账单情况。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>如何辨别房源信息的真实性？</h3>
+                        <p>建议通过正规中介平台或直接联系房东核验房产证明。如果租金明显低于市场价，需提高警惕，避免财产损失。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 行动号召 -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-banner">
+                    <h2>准备在富润家园租房？</h2>
+                    <p>留下您的需求，我们会协助筛选符合要求的房源信息，并为您提供客观的租房建议。</p>
+                    <button class="cta-button" type="button">免费获取房源推荐</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>富润家园租房</h4>
+                    <ul>
+                        <li><a href="#">小区简介</a></li>
+                        <li><a href="#">在租房源</a></li>
+                        <li><a href="#">户型图鉴</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>租住指南</h4>
+                    <ul>
+                        <li><a href="#">租房流程</a></li>
+                        <li><a href="#">合同注意事项</a></li>
+                        <li><a href="#">搬家服务</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>周边信息</h4>
+                    <ul>
+                        <li><a href="#">交通出行</a></li>
+                        <li><a href="#">周边学校</a></li>
+                        <li><a href="#">医疗机构</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>电话：400-800-1234</li>
+                        <li>邮箱：zulin@example.com</li>
+                        <li>服务时间：9:00-18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 富润家园租房信息平台 · 本页面仅提供信息参考，具体房源信息请以实际核验为准。</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
